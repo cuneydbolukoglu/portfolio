@@ -9,7 +9,7 @@ export const MenuData = [
         page: About
     },
     {
-        title: 'Portfolio',
+        title: 'Experiments',
         url: '/Portfolio',
         page: Portfolio
     },

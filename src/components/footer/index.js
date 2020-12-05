@@ -12,6 +12,9 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
+                <div>
+                    Contact
+                </div>
                 <div className="social_link">
                     <a href="https://www.linkedin.com/in/cuneydbolukoglu/" target="blank"><i className="icon-linkedin-in-brands"></i></a>
                     <a href="https://codepen.io/cuneyd" target="blank"><i className="icon-codepen-brands"></i></a>

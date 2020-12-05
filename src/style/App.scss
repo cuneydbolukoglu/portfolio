@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Spartan', sans-serif;
 }
 
 html, body{
     background-color: #000;
+    color: #fff;
 }
 
 h1 {
@@ -27,11 +31,13 @@ a {
 }
 
 header {
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     margin: 30px;
 
     .logo {
+
         i {
             font-size: 60px;
         }
@@ -85,12 +91,15 @@ header {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    z-index: 1;
+    position: fixed;
+    left: 0;
     right: 0;
+    bottom: 0;
+    justify-content: space-between;
     display: flex;
     margin: 30px;
-
+    
     a {
         color: #fff;
         text-decoration: none;
