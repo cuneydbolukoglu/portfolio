@@ -13,7 +13,7 @@ export default class Footer extends Component {
         return (
             <footer>
                 <div>
-                    Contact
+                    Portfolio
                 </div>
                 <div className="social_link">
                     <a href="https://www.linkedin.com/in/cuneydbolukoglu/" target="blank"><i className="icon-linkedin-in-brands"></i></a>
