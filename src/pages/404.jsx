@@ -1,8 +1,9 @@
 const errorpage = props => {
     return (
-        <section className="404-section">
+        <section className="errorpage-section">
             <article>
-                <h1>404 | This page could not be found.</h1>
+                <div className="error-title">404</div>
+                <div className="error-text">This page could not be found.</div>
             </article>
         </section>
     )
