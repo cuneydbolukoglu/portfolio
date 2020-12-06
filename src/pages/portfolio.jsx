@@ -1,6 +1,6 @@
 const Portfolio = props => {
     return (
-        <section className="portfolio">
+        <section className="portfolio-section">
             <div>
                 Portfolio
             </div>

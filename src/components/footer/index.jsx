@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Route, Link } from 'react-router-dom';
 
 export default class Footer extends Component {
     constructor(props) {
@@ -12,9 +13,6 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
-                <div>
-                    Portfolio
-                </div>
                 <div className="social_link">
                     <a href="https://www.linkedin.com/in/cuneydbolukoglu/" target="blank"><i className="icon-linkedin-in-brands"></i></a>
                     <a href="https://codepen.io/cuneyd" target="blank"><i className="icon-codepen-brands"></i></a>

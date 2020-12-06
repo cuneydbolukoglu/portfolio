@@ -1,6 +1,6 @@
 const About = props => {
     return (
-        <section className="About">
+        <section className="about-section">
             <div>
                 About
             </div>
