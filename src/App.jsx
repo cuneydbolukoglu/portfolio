@@ -1,7 +1,7 @@
 import React from 'react';
 import './style/icon-style.css'
 import './style/app.scss';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
 
 import MenuData from './data/MenuData';
 import Header from './components/header';
@@ -10,16 +10,18 @@ import ErrorPage from './pages/404';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Switch>
-        {
-          MenuData.map((item, index) => <Route key={index} exact path={item.url} component={item.page} />)
-        }
-        <Route component={ErrorPage} />
-      </Switch>
-      <Footer />
-    </Router>
+    <HashRouter>
+      <Router>
+        <Header />
+        <Switch>
+          {
+            MenuData.map((item, index) => <Route key={index} exact path={item.url} component={item.page} />)
+          }
+          <Route component={ErrorPage} />
+        </Switch>
+        <Footer />
+      </Router>
+    </HashRouter>
   )
 }
 
