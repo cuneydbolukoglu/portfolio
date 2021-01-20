@@ -1,6 +1,7 @@
 import About from '../pages/about';
 import Home from '../pages/home';
 import Portfolio from '../pages/portfolio';
+import Contact from '../pages/contact';
 
 export const MenuData = [
     {
@@ -16,7 +17,12 @@ export const MenuData = [
         title: 'Experiments',
         url: '/portfolio',
         page: Portfolio
+    },
+    {
+        title: 'Contact',
+        url: '/contact',
+        page: Contact
     }
 ]
 
-export default MenuData
+export default MenuData;

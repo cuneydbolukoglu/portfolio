@@ -116,6 +116,19 @@ header {
     z-index: -1;
 }
 
+.contact-section {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: -1;
+}
+
 .errorpage-section {
     color: #fff;
     width: 100%;
