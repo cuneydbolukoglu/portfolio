@@ -1,7 +1,7 @@
-import About from '../pages/about';
-import Home from '../pages/home';
-import Portfolio from '../pages/portfolio';
-import Contact from '../pages/contact';
+import About from '../pages/About';
+import Home from '../pages/Home';
+import Portfolio from '../pages/Portfolio';
+import Contact from '../pages/Contact';
 
 export const MenuData = [
     {

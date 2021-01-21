@@ -1,6 +1,4 @@
 import React from 'react';
-import './style/icon-style.css'
-import './style/app.scss';
 import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
 
 import MenuData from './data/MenuData';

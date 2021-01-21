@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800;900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Spartan', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-html, body{
+html,
+body {
     background-color: #000;
     color: #fff;
 }
@@ -21,12 +22,43 @@ h2 {
     font-weight: 800;
 }
 
-a {
-    color: #fff;
+a{
+    color: white;
     text-decoration: none;
 
     &:hover {
+        color: white;
         text-decoration: none;
+    }
+}
+
+.link_a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    &:before {
+        content: "";
+        display: block !important;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        left: 0;
+        height: 2px;
+    }
+
+    &:hover:before {
+        width: 0;
+        left: auto;
+        right: 0;
+        bottom: -5px;
+        transition: all 0.35s cubic-bezier(0.694, 0.048, 0.335, 1);
     }
 }
 
@@ -37,7 +69,7 @@ header {
     margin: 30px;
 
     .logo {
-
+        
         i {
             font-size: 60px;
         }
@@ -88,45 +120,11 @@ header {
     align-items: center;
     display: flex;
     z-index: -1;
-}
 
-.about-section {
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    z-index: -1;
-}
-
-.portfolio-section {
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    z-index: -1;
-}
-
-.contact-section {
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    z-index: -1;
+    img{
+        width: 180px;
+        margin-right: 100px;
+    }
 }
 
 .errorpage-section {
@@ -141,13 +139,13 @@ header {
     display: flex;
     z-index: -1;
 
-    .error-title{
+    .error-title {
         font-size: 50px;
         text-align: center;
         font-weight: 900;
     }
 
-    .error-text{
+    .error-text {
         font-size: 20px;
     }
 }
@@ -159,7 +157,7 @@ footer {
     bottom: 0;
     display: flex;
     margin: 30px;
-    
+
     a {
         color: #fff;
         text-decoration: none;
@@ -169,7 +167,7 @@ footer {
         }
 
         i {
-            font-size: 16px;
+            font-size: 17px;
         }
     }
 }
