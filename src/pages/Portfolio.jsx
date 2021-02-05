@@ -1,16 +1,10 @@
-import { Container, Row, Col } from "react-bootstrap";
-
 const Portfolio = props => {
     return (
-        <Container>
-            <Row>
-                <Col>
-                    <article>
-                        <h2>Experiments</h2>
-                    </article>
-                </Col>
-            </Row>
-        </Container>
+        <section className="portfolio">
+            <article>
+                <h2>Expermenites</h2>
+            </article>
+        </section>
     )
 }
 

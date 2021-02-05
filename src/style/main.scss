@@ -13,13 +13,18 @@ body {
 }
 
 h1 {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: normal;
 }
 
 h2 {
     font-size: 30px;
     font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.text{
+    font-size: 100px !important;
 }
 
 a{
@@ -125,6 +130,42 @@ header {
         width: 180px;
         margin-right: 100px;
     }
+}
+
+.about{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: -1;
+}
+
+.portfolio{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: -1;
+}
+
+.contact{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: -1;
 }
 
 .errorpage-section {

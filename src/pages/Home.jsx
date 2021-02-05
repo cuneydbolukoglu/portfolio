@@ -1,10 +1,10 @@
-
 const Home = props => {
     return (
         <section className="home-section">
             <article>
-                <h1>Cüneyd BÖLÜKOĞLU</h1>
-                <h2>FRONT END DEVELOPER</h2>
+                <h1 class="glitch" data-text="CÜNEYD">CÜNEYD</h1>
+                <h1 class="glitch text" data-text="BÖLÜKOĞLU">BÖLÜKOĞLU</h1>
+                <h1>FRONT END DEVELOPER</h1>
             </article>
         </section>
     )
