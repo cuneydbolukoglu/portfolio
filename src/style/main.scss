@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800;900&display=swap");
+@import './mobile.scss';
 
 * {
     margin: 0;
@@ -114,7 +115,7 @@ header {
     }
 }
 
-.home-section {
+.homepage {
     color: #fff;
     width: 100%;
     height: 100%;
@@ -142,6 +143,27 @@ header {
     align-items: center;
     display: flex;
     z-index: -1;
+
+    figure{
+        float: left;
+        width: 50%;
+        flex-direction: column;
+        padding: 0 10%;
+    }
+
+    article{
+        float: right;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 10%;
+    }
+
+    p{
+        padding: 2% 0;
+    }
 }
 
 .portfolio{
@@ -154,6 +176,7 @@ header {
     align-items: center;
     display: flex;
     z-index: -1;
+    flex-direction: column;
 }
 
 .contact{
