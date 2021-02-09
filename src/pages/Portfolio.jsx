@@ -10,6 +10,10 @@ const Portfolio = props => {
                 portfolioData.map((item, index) =>
                     <PortfolioDetail key={index}
                         Name={item.name}
+                        Url={item.url}
+                        ImgUrl={item.imgurl}
+                        Githubrepo={item.githubrepo}
+                        Technology={item.technology}
                     />
                 )
             }

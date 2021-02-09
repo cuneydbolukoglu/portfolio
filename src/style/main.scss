@@ -177,6 +177,16 @@ header {
     display: flex;
     z-index: -1;
     flex-direction: column;
+    
+    .portfolio-detail{
+        width: 50%;
+        padding: 2% 10%;
+        display: grid;
+
+        a{
+            padding: 5px 0px;
+        }
+    }
 }
 
 .contact{

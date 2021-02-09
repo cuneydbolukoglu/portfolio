@@ -16,7 +16,7 @@ export const MenuData = [
         title: 'Experiments',
         url: '/portfolio',
         page: Portfolio
-    }   
+    }
 ]
 
 export default MenuData;
