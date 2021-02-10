@@ -1,0 +1,34 @@
+{
+    "root": "https://github.com/cuneydbolukoglu/portfolio-new/blob/main",
+    "portfolioData": [
+        {
+            "id": 0,
+            "name": "Membership Application",
+            "url": "https://membership-app-91af9.firebaseapp.com",
+            "imgurl": "/src/assets/img/todolist-jquery.png?raw=true",
+            "githubrepo": "https://github.com/cuneydbolukoglu/membership-app",
+            "technology": "react, hooks, sass, firebase, md5hashing"
+        },
+        {
+            "id": 1,
+            "name": "Movie Search App",
+            "url": "",
+            "imgurl": "../assets/img/todolist-jquery.png",
+            "githubrepo": "https://github.com/cuneydbolukoglu/movie-search-app"
+        },
+        {
+            "id": 2,
+            "name": "Todolist jQuery",
+            "url": "https://cuneydbolukoglu.github.io/todolist-jquery",
+            "imgurl": "../assets/img/todolist-jquery.png",
+            "githubrepo": "https://github.com/cuneydbolukoglu/todolist-jquery",
+        },
+        {
+            "id": 3,
+            "name": "Todolist React",
+            "url": "https://cuneydbolukoglu.github.io/todolist",
+            "imgurl": "../assets/img/todolist-jquery.png",
+            "githubrepo": "https://github.com/cuneydbolukoglu/todolist-app"
+        }
+    ]
+}
