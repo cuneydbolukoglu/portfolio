@@ -1,6 +1,5 @@
 const portfolioDetail = props => {
-    console.log(props)
-
+    
     return (
         <div className="portfolio-detail">
             <h3>{props.Name}</h3>
