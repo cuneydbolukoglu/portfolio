@@ -1,6 +1,6 @@
 {
-    "root": ["https://raw.githubusercontent.com/cuneydbolukoglu/portfolio-new/main/"],
-    "portfoliodata": [
+    "root": "https://raw.githubusercontent.com/cuneydbolukoglu/portfolio-new/main/",
+    "portfolio": [
         {
             "id": 0,
             "name": "Membership Application",

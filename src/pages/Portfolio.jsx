@@ -24,14 +24,14 @@ const Portfolio = props => {
                 <h2>Expermenites</h2>
             </article>
             {
-                    <Portfoliodetail
-                        // Name={data.name}
-                        // Url={data.url}
-                        // ImgUrl={data.imgurl}
-                        // Githubrepo={data.githubrepo}
-                        // Technology={data.technology}
-                    />
-                
+                <Portfoliodetail
+                // Name={data.name}
+                // Url={data.url}
+                // ImgUrl={data.imgurl}
+                // Githubrepo={data.githubrepo}
+                // Technology={data.technology}
+                />
+
             }
         </section >
     )
