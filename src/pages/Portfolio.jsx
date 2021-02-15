@@ -18,8 +18,6 @@ const Portfolio = props => {
             });
     }, []);
 
-    console.log(data)
-
     return (
         <section className="portfolio">
             <article>
