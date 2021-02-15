@@ -11,7 +11,7 @@ const Portfolio = props => {
         axios.get(api)
             .then(response => {
                 console.log("response: ", response);
-                setData(response.data)
+                setData(response)
             })
             .catch(err => {
                 console.error("error: ", err);
@@ -19,7 +19,6 @@ const Portfolio = props => {
     }, []);
 
     console.log(data)
-
 
     return (
         <section className="portfolio">

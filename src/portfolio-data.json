@@ -1,4 +1,4 @@
-{
+[{
     "root": "https://raw.githubusercontent.com/cuneydbolukoglu/portfolio-new/main/",
     "portfoliodata": [
         {
@@ -31,4 +31,4 @@
             "githubrepo": "https://github.com/cuneydbolukoglu/todolist-app"
         }
     ]
-}
+}]
