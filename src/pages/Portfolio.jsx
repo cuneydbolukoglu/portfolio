@@ -1,23 +1,23 @@
-import axios from 'axios';
 import { useEffect, useState } from 'react';
+import axios from 'axios';
 import Portfoliodetail from './PortfolioDetail';
 
 const Portfolio = props => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState(null);
 
-    const api = 'https://raw.githubusercontent.com/cuneydbolukoglu/portfolio-new/main/src/portfolio-data.json'
+    const api = 'https://raw.githubusercontent.com/cuneydbolukoglu/portfolio-new/main/src/portfolio.json'
 
     useEffect(() => {
         axios.get(api)
             .then(response => {
-                console.log("response: ", response);
-                setData(response)
+                console.log("response: ", response.data);
+                setData(response.data)
             })
             .catch(err => {
                 console.error("error: ", err);
             });
     }, []);
-
+    
     return (
         <section className="portfolio">
             <article>
