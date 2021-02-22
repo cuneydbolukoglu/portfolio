@@ -1,8 +1,10 @@
+import img from '../assets/img/do-more-y3.jpg';
+
 const About = props => {
     return (
         <section className="about">
             <figure>
-                Photo
+                {/* <img src={img} alt="img"/> */}
             </figure>
             <article>
                 <h2> About Me.</h2>

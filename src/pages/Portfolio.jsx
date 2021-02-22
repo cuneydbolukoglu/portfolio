@@ -11,28 +11,33 @@ const Portfolio = props => {
         axios.get(api)
             .then(response => {
                 console.log("response: ", response.data);
-                setData(response.data)
+                
+                response.map((item ,ind) => {
+                    console.log("item: ", item.portfolio)
+                })
+
+                //setData(response.data)
             })
             .catch(err => {
                 console.error("error: ", err);
             });
     }, []);
-    
+
     return (
         <section className="portfolio">
             <article>
                 <h2>Expermenites</h2>
             </article>
-            {
+            {/* {
                 <Portfoliodetail
-                // Name={data.name}
-                // Url={data.url}
-                // ImgUrl={data.imgurl}
-                // Githubrepo={data.githubrepo}
-                // Technology={data.technology}
+                    Name={data.name}
+                    Url={data.url}
+                    ImgUrl={data.imgurl}
+                    Githubrepo={data.githubrepo}
+                    Technology={data.technology}
                 />
 
-            }
+            } */}
         </section >
     )
 }
