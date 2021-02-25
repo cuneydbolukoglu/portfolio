@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Portfoliodetail from './PortfolioDetail';
 
 const Portfolio = props => {
     const [data, setData] = useState(null);
@@ -28,16 +27,6 @@ const Portfolio = props => {
             <article>
                 <h2>Expermenites</h2>
             </article>
-            {/* {
-                <Portfoliodetail
-                    Name={data.name}
-                    Url={data.url}
-                    ImgUrl={data.imgurl}
-                    Githubrepo={data.githubrepo}
-                    Technology={data.technology}
-                />
-
-            } */}
         </section >
     )
 }

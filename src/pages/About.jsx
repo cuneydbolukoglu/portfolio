@@ -7,7 +7,7 @@ const About = props => {
                 {/* <img src={img} alt="img"/> */}
             </figure>
             <article>
-                <h2> About Me.</h2>
+                <h2>About Me.</h2>
                 <p>Hi, I'm Cüneyd. I am a <b>Front-end developer</b>,
                         I create great sites and web applications with HTML and CSS and decorate them with <b>Javascript</b>.</p>
                 <p>Photoshop, Sketch, Adobe XD, Figma, Zeplin etc.
