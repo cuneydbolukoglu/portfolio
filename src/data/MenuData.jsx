@@ -1,6 +1,5 @@
 import About from '../pages/About';
 import Home from '../pages/Home';
-import Portfolio from '../pages/Portfolio';
 
 export const MenuData = [
     {
@@ -11,11 +10,6 @@ export const MenuData = [
         title: 'About',
         url: '/about',
         page: About
-    },
-    {
-        title: 'Experiments',
-        url: '/portfolio',
-        page: Portfolio
     }
 ]
 
