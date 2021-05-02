@@ -1,5 +1,5 @@
-import { BrowserRouter as Route, Link } from 'react-router-dom';
-import MenuData from '../../data/MenuData';
+import { Link } from 'react-router-dom';
+// import MenuData from '../../data/MenuData';
 
 const Header = props => {
     return (
@@ -10,9 +10,10 @@ const Header = props => {
                 </Link>
             </div>
             <nav>
-                {
+                <Link to="/about">ABOUT ME</Link>
+                {/* {
                     MenuData.map((item, index) => <Link key={index} to={item.url}>{item.title}</Link>)
-                }
+                } */}
             </nav>
         </header>
     )

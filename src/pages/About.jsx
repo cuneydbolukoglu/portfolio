@@ -2,7 +2,7 @@ const About = props => {
     return (
         <section className="about">
             <figure>
-                {/* <img src={img} style={{ width: '440px' }} alt="img" /> */}
+                
             </figure>
             <article>
                 <h2>About Me.</h2>
