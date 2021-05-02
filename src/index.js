@@ -4,7 +4,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './style/icon-style.css'
 import './style/main.scss';
-import './style/glicth-effect.scss'
 
 ReactDOM.render(
   <React.StrictMode>
