@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import img from '../assets/img/membership.png';
 import imgMobile from '../assets/img/membership-mobile.png';
 
@@ -13,8 +12,8 @@ const Portfolio = props => {
                 <p>Membership Login Design</p>
                 <h2>Source</h2>
                 <p>
-                    <Link to="https://github.com/cuneydbolukoglu/membership-app">Github</Link><br/>
-                    <Link to="https://membership-app-91af9.firebaseapp.com">Website</Link>
+                    <a href="https://github.com/cuneydbolukoglu/membership-app">Github</a><br/>
+                    <a href="https://membership-app-91af9.firebaseapp.com">Website</a>
                 </p>
             </article>
             <figure>

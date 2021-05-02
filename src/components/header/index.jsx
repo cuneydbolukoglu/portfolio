@@ -14,6 +14,11 @@ const Header = props => {
                 {/* {
                     MenuData.map((item, index) => <Link key={index} to={item.url}>{item.title}</Link>)
                 } */}
+
+                <div class="hmbrgr-button">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
             </nav>
         </header>
     )
