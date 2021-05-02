@@ -72,7 +72,7 @@ header {
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    padding: 30px;
 
     .logo {
         
@@ -83,35 +83,8 @@ header {
 
     nav {
         position: relative;
-
-        a {
-            color: white;
-            text-decoration: none;
-            position: relative;
-            font-weight: bold;
-
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
-
-            &:before {
-                content: "";
-                display: block;
-                position: absolute;
-                background-color: white;
-                width: 0;
-                left: auto;
-                right: 0;
-                bottom: -5px;
-                height: 2px;
-                transition: all 0.35s cubic-bezier(0.694, 0.048, 0.335, 1);
-            }
-            &:hover:before {
-                width: 100%;
-                left: 0;
-                text-decoration: none;
-            }
-        }
+        font-size: 10px;
+        letter-spacing: 3px;
     }
 }
 
@@ -148,7 +121,7 @@ header {
         float: left;
         width: 50%;
         flex-direction: column;
-        padding: 0 10%;
+        padding: 0 20px;
     }
 
     article{
@@ -158,11 +131,11 @@ header {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 0 10%;
+        padding: 0 20px;
     }
 
     p{
-        padding: 2% 0;
+        padding: 10px 0;
     }
 }
 
@@ -170,22 +143,32 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
+    right: 0;
     left: 0;
     top: 0;
     justify-content: center;
     align-items: center;
     display: flex;
     z-index: -1;
-    flex-direction: column;
-    
-    .portfolio-detail{
-        width: 50%;
-        padding: 2% 10%;
-        display: grid;
 
-        a{
-            padding: 5px 0px;
+    article{
+        float: left;
+        width: 50%;
+        flex-direction: column;
+        padding: 0 20px;
+
+        p{
+            padding: 50px 0;
         }
+    }
+
+    figure{
+        float: right;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
     }
 }
 
@@ -227,17 +210,21 @@ header {
 footer {
     z-index: 1;
     position: fixed;
+    left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    margin: 30px;
+    padding: 30px;
+    justify-content: space-between;
 
     a {
         color: #fff;
         text-decoration: none;
+        font-size: 10px;
+        letter-spacing: 3px;
 
         &:not(:last-child) {
-            margin-right: 20px;
+            margin-right: 10px;
         }
 
         i {
