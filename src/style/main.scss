@@ -24,10 +24,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-.text {
-    font-size: 80px !important;
-}
-
 a {
     color: white;
     text-decoration: none;
@@ -38,7 +34,7 @@ a {
     }
 }
 
-.link_a {
+.link-a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -53,9 +49,10 @@ a {
         content: "";
         display: block !important;
         position: absolute;
-        background-color: white;
+        background-color: #555;
         width: 100%;
         left: 0;
+        bottom: -5px;
         height: 2px;
     }
 
@@ -70,9 +67,13 @@ a {
 
 header {
     z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
+    padding: 80px 30px;
     justify-content: space-between;
-    padding: 30px;
 
     .logo {
         i {
@@ -120,31 +121,50 @@ header {
     display: flex;
     z-index: -1;
 
-    figure {
+    article {
         float: left;
         width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
         flex-direction: column;
-        padding: 0 50px;
+        padding-left: 100px;
+        padding-right: 10px;
+        font-size: 25px;
+
+        p {
+            padding: 20px 0;
+        }
+
+        .download {
+            margin-top: 50px;
+            font-size: 18px;
+
+            img {
+                margin-right: 10px;
+            }
+        }
     }
 
-    article {
+    figure {
         float: right;
         width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 0 50px;
+        padding-right: 100px;
+        padding-left: 10px;
+        font-size: 25px;
+        opacity: .8;
     }
 
-    p {
-        padding: 10px 0;
-    }
+    .about-link {
+        font-size: 18px;
 
-    .download {
-        font-weight: bold;
-
-        img {
+        .link-a {
+            color: #555;
+            font-weight: normal;
             margin-right: 10px;
         }
     }
@@ -190,7 +210,7 @@ footer {
     right: 0;
     bottom: 0;
     display: flex;
-    padding: 30px;
+    padding: 80px 30px;
     justify-content: space-between;
 
     a {

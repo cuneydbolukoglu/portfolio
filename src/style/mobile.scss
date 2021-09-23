@@ -13,13 +13,13 @@
             }
         }
 
+        h2 {
+            font-size: 23px !important;
+        }
+
         article {
             position: absolute !important;
             text-align: center !important;
-        }
-
-        h2 {
-            font-size: 20px !important;
         }
     }
 
@@ -28,9 +28,18 @@
             display: none !important;
         }
 
+        h2 {
+            font-size: 23px !important;
+        }
+
         article {
             width: 100% !important;
             padding: 0 5% !important;
+            font-size: 20px !important;
+
+            p{
+                padding: 10px 0px !important;
+            }
         }
     }
 }
