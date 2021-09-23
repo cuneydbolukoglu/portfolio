@@ -1,5 +1,4 @@
 import img from '../assets/img/membership.png';
-import imgMobile from '../assets/img/membership-mobile.png';
 
 const Portfolio = props => {
 
@@ -18,12 +17,6 @@ const Portfolio = props => {
             </article>
             <figure>
                 <img style={{ width: '500px' }} src={img} alt="" />
-                <img style={{
-                    width: '150px',
-                    position: 'relative',
-                    top: '-250px',
-                    left: '15px'
-                }} src={imgMobile} alt="" />
             </figure>
         </section>
     )

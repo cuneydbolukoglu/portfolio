@@ -1,27 +1,34 @@
 @media screen and (max-width: 740px) {
-
-    header,footer{
+    header,
+    footer {
         padding: 15px !important;
     }
 
     .homepage {
+        figure {
 
-        .glicth {
-            font-size: 25px !important;
+            .icon {
+                width: 270px !important;
+                margin: 0 !important;
+            }
         }
 
-        .text {
-            font-size: 50px !important;
+        article {
+            position: absolute !important;
+            text-align: center !important;
+        }
+
+        h2 {
+            font-size: 20px !important;
         }
     }
 
-    .about{
-
-        figure{
+    .about {
+        figure {
             display: none !important;
         }
 
-        article{
+        article {
             width: 100% !important;
             padding: 0 5% !important;
         }

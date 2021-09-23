@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-// import MenuData from '../../data/MenuData';
 
 const Header = props => {
+    const history = false
+
     return (
         <header>
             <div className="logo">
@@ -9,17 +10,15 @@ const Header = props => {
                     <i className="icon-logo"></i>
                 </Link>
             </div>
-            <nav>
-                <Link to="/about">ABOUT ME</Link>
-                {/* {
-                    MenuData.map((item, index) => <Link key={index} to={item.url}>{item.title}</Link>)
-                } */}
-
-                <div class="hmbrgr-button">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                </div>
-            </nav>
+            {history ?
+                <nav>
+                    <Link to="/">BACK</Link>
+                </nav>
+                :
+                <nav>
+                    <Link to="/about">ABOUT ME</Link>
+                </nav>
+            }
         </header>
     )
 }

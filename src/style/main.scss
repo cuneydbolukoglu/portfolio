@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800;900&display=swap");
-@import './mobile.scss';
+@import "./mobile.scss";
 
 * {
     margin: 0;
@@ -24,11 +24,11 @@ h2 {
     margin-bottom: 20px;
 }
 
-.text{
+.text {
     font-size: 80px !important;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 
@@ -75,7 +75,6 @@ header {
     padding: 30px;
 
     .logo {
-        
         i {
             font-size: 60px;
         }
@@ -100,13 +99,17 @@ header {
     display: flex;
     z-index: -1;
 
-    img{
-        width: 180px;
-        margin-right: 100px;
+    figure {
+        position: relative;
+
+        .icon {
+            width: 440px;
+            margin-right: 100px;
+        }
     }
 }
 
-.about{
+.about {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -117,71 +120,34 @@ header {
     display: flex;
     z-index: -1;
 
-    figure{
+    figure {
         float: left;
         width: 50%;
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0 50px;
     }
 
-    article{
+    article {
         float: right;
         width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0 50px;
     }
 
-    p{
+    p {
         padding: 10px 0;
     }
-}
 
-.portfolio{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    z-index: -1;
+    .download {
+        font-weight: bold;
 
-    article{
-        float: left;
-        width: 50%;
-        flex-direction: column;
-        padding: 0 20px;
-
-        p{
-            padding: 50px 0;
+        img {
+            margin-right: 10px;
         }
     }
-
-    figure{
-        float: right;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 20px;
-    }
-}
-
-.contact{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    z-index: -1;
 }
 
 .errorpage-section {
@@ -204,6 +170,16 @@ header {
 
     .error-text {
         font-size: 20px;
+    }
+
+    .error-back-button {
+        font-weight: bold;
+        border: 1px solid;
+        display: flex;
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
 }
 
