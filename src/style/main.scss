@@ -14,14 +14,20 @@ body {
 }
 
 h1 {
-    font-size: 15px;
-    font-weight: normal;
+    font-size: 30px;
+    font-weight: 800;
 }
 
 h2 {
-    font-size: 30px;
-    font-weight: 800;
-    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+h3 {
+    position: absolute;
+    right: 0;
+    font-size: 13px;
 }
 
 a {
@@ -72,7 +78,7 @@ header {
     left: 0;
     right: 0;
     display: flex;
-    padding: 80px 30px;
+    padding: 50px;
     justify-content: space-between;
 
     .logo {
@@ -83,8 +89,38 @@ header {
 
     nav {
         position: relative;
-        font-size: 10px;
+        font-size: 15px;
         letter-spacing: 3px;
+        margin-top: 8px;
+
+        a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            font-weight: bold;
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: white;
+                width: 0;
+                left: auto;
+                right: 0;
+                bottom: -5px;
+                height: 2px;
+                transition: all 0.35s cubic-bezier(0.694, 0.048, 0.335, 1);
+            }
+            &:hover:before {
+                width: 100%;
+                left: 0;
+                text-decoration: none;
+            }
+
+            &:not(:first-child) {
+                margin-left: 30px;
+            }
+        }
     }
 }
 
@@ -104,8 +140,26 @@ header {
         position: relative;
 
         .icon {
-            width: 440px;
-            margin-right: 100px;
+            width: 450px;
+        }
+    }
+
+    article {
+        position: absolute;
+    }
+
+    h2 {
+        &::after {
+            content: "";
+            display: block;
+            height: 50%;
+            width: 100%;
+            background: rgba(216, 216, 216, 0.1);
+            position: absolute;
+            left: 0;
+            bottom: 8px;
+            z-index: -1;
+            transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0s;
         }
     }
 }
@@ -121,16 +175,29 @@ header {
     display: flex;
     z-index: -1;
 
-    article {
+    figure {
         float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 25px;
+        padding: 0 2% 0 10%;
         width: 50%;
-        height: 100%;
+
+        img {
+            position: absolute;
+        }
+    }
+
+    article {
+        float: right;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding-left: 100px;
-        padding-right: 10px;
-        font-size: 25px;
+        font-size: 20px;
+        width: 50%;
+        padding: 2% 10% 0 0;
 
         p {
             padding: 20px 0;
@@ -138,25 +205,11 @@ header {
 
         .download {
             margin-top: 50px;
-            font-size: 18px;
 
             img {
                 margin-right: 10px;
             }
         }
-    }
-
-    figure {
-        float: right;
-        width: 50%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding-right: 100px;
-        padding-left: 10px;
-        font-size: 25px;
-        opacity: .8;
     }
 
     .about-link {
@@ -166,6 +219,11 @@ header {
             color: #555;
             font-weight: normal;
             margin-right: 10px;
+
+            &:hover {
+                color: white;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -206,11 +264,10 @@ header {
 footer {
     z-index: 1;
     position: fixed;
-    left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    padding: 80px 30px;
+    padding: 50px;
     justify-content: space-between;
 
     a {

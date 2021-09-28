@@ -1,7 +1,7 @@
 @media screen and (max-width: 740px) {
     header,
     footer {
-        padding: 15px !important;
+        padding: 20px !important;
     }
 
     .homepage {
@@ -25,20 +25,36 @@
 
     .about {
         figure {
-            display: none !important;
+            width: 100% !important;
+            position: absolute !important;
+            padding: 0 !important;
+
+            img{
+                width: 270px !important;
+                z-index: -1;
+                opacity: .5;
+            }
         }
 
         h2 {
             font-size: 23px !important;
         }
 
+        .about-link{
+            font-size: 13px !important;
+        }
+
         article {
             width: 100% !important;
             padding: 0 5% !important;
-            font-size: 20px !important;
+            font-size: 15px !important;
 
             p{
                 padding: 10px 0px !important;
+            }
+
+            img{
+                width: 15px !important;
             }
         }
     }

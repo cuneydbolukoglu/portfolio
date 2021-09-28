@@ -1,14 +1,16 @@
-import IconGif from '../assets/img/original.gif';
+import video from '../assets/video/Air-Bubbles.mp4';
 
 const Home = props => {
     return (
         <section className="homepage">
             <figure>
-                <img src={IconGif} className="icon" alt="icon" />
+                <video src={video} width="100%" height="100%" autoplay controls muted>
+                </video>
             </figure>
             <article>
-                <h1>Cüneyd BÖLÜKOĞLU</h1>
-                <h2>Front-End Developer <br /> at skyz.tech From Turkey</h2>
+                <h1>Hi! I’m Cüneyd</h1>
+                <h2>Front-End Developer</h2>
+                <h3>at skyz.tech from Turkey</h3>
             </article>
         </section>
     )
