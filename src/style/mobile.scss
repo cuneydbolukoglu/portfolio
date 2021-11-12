@@ -1,61 +1,108 @@
 @media screen and (max-width: 740px) {
-    header,
-    footer {
+    header {
         padding: 20px !important;
+
+        nav {
+            display: none !important;
+        }
+
+        .hmbrgr-button {
+            display: block !important;
+        }
+    }
+
+    footer {
+        padding: 0 0 20px 0 !important;
+        justify-content: center !important;
+    }
+
+    .active {
+        display: flex !important;
+        position: fixed;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        transition: 0.4s;
+
+        a {
+            font-size: 18px;
+            font-weight: 900;
+            padding: 20px;
+        }
     }
 
     .homepage {
         figure {
-
-            .icon {
-                width: 270px !important;
-                margin: 0 !important;
-            }
-        }
-
-        h2 {
-            font-size: 23px !important;
+            font-size: 120px !important;
+            bottom: -220px !important;
+            left: -150px !important;
+            transform: rotate(90deg) !important;
         }
 
         article {
-            position: absolute !important;
-            text-align: center !important;
+            left: 0 !important;
+        }
+
+        h2 {
+            font-size: 25px !important;
         }
     }
 
     .about {
-        figure {
-            width: 100% !important;
-            position: absolute !important;
-            padding: 0 !important;
+        .about-left {
+            width: 0 !important;
+            float: none !important;
 
-            img{
-                width: 270px !important;
-                z-index: -1;
-                opacity: .5;
+            article {
+                position: absolute !important;
+                top: 120px !important;
+                padding: 0 15px !important;
+                justify-content: normal !important;
+                align-items: normal !important;
+
+                h4,
+                p {
+                    font-size: 30px !important;
+                }
             }
         }
 
-        h2 {
-            font-size: 23px !important;
-        }
-
-        .about-link{
-            font-size: 13px !important;
-        }
-
-        article {
+        .about-right {
+            position: relative !important;
             width: 100% !important;
-            padding: 0 5% !important;
+            float: none !important;
+            padding: 0 15px !important;
+
+            h5{
+                font-size: 17px !important;
+            }
+
+            article{
+                font-size: 15px !important;
+            }
+        }
+    }
+
+    .works {
+        .works-content {
+            line-height: 40px !important;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        h4 {
             font-size: 15px !important;
+        }
 
-            p{
-                padding: 10px 0px !important;
-            }
-
-            img{
-                width: 15px !important;
-            }
+        h5 {
+            font-size: 10px !important;
         }
     }
 }

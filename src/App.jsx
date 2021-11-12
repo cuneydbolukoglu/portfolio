@@ -12,9 +12,9 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          {
-            MenuData.map((item, index) => <Route key={index} exact path={item.url} component={item.page} />)
-          }
+            {
+              MenuData.map((item, index) => <Route key={index} exact path={item.url} component={item.page} />)
+            }
           <Route component={ErrorPage} />
         </Switch>
         <Footer />
