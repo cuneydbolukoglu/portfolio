@@ -6,16 +6,6 @@ export const MenuData = [
     {
         url: '/',
         page: Home
-    },
-    {
-        title: 'About',
-        url: '/about',
-        page: About
-    },
-    {
-        title: 'Works',
-        url: '/works',
-        page: Works
     }
 ]
 

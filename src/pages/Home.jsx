@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import arrow from '../assets/img/arrow.svg';
 
 const Home = (props) => {
   useEffect(() => {
@@ -95,6 +96,10 @@ const Home = (props) => {
           </div>
         </div>
       </section>
+      <div className="about-pipe">
+          <p>About</p>
+          <span>|</span>
+      </div>
       <section className="about">
         <div className="about-left">
           <article className="slide-nav">
