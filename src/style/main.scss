@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800;900&display=swap");
 @import "./mobile.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
 
 html,
 body {
-    background-color: #000;
+    background-color: #0d1117;
     color: #fff;
 }
 
@@ -38,9 +39,15 @@ h5 {
     font-weight: 500;
 }
 
+h6 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
 a {
     color: white;
     text-decoration: none;
+
     &:hover {
         color: white;
         text-decoration: none;
@@ -54,24 +61,29 @@ header {
     left: 0;
     right: 0;
     display: flex;
-    padding: 30px;
+    padding: 3% 4%;
     justify-content: space-between;
+
     .logo {
         z-index: 1;
+
         i {
             font-size: 60px;
         }
     }
+
     nav {
         position: relative;
         font-size: 12px;
         font-weight: 400;
         letter-spacing: 3px;
         margin-top: 8px;
+
         a {
             color: white;
             text-decoration: none;
             position: relative;
+
             &:before {
                 content: "";
                 display: block;
@@ -84,53 +96,18 @@ header {
                 height: 1px;
                 transition: all 0.35s cubic-bezier(0.694, 0.048, 0.335, 1);
             }
+
             &:hover:before {
                 width: 100%;
                 left: 0;
                 text-decoration: none;
             }
+
             &:not(:first-child) {
                 margin-left: 30px;
             }
         }
     }
-    .hmbrgr-button {
-        z-index: 1;
-        display: none;
-        height: 100%;
-        padding: 10px;
-        border-radius: 50%;
-        cursor: pointer;
-        .bar1,
-        .bar2,
-        .bar3 {
-            width: 35px;
-            height: 2px;
-            background-color: white;
-            margin: 10px 0px;
-            transition: 0.4s;
-        }
-        .bar2 {
-            width: 25px;
-            position: relative;
-            left: 15px;
-        }
-    }
-    .change .bar1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    .change .bar2 {
-        width: 35px;
-        left: 0;
-        transform: rotate(45deg) translate(-2px, -4px);
-    }
-    .change .bar3 {
-        display: none;
-    }
-}
-
-.nav-mobile {
-    display: none;
 }
 
 .homepage {
@@ -144,13 +121,16 @@ header {
     align-items: center;
     display: flex;
     z-index: -1;
+
     #container {
         /* This will come into play later */
         perspective: 40px;
     }
+
     #inner {
         transition: transform 0.5s;
     }
+
     figure {
         position: relative;
         user-select: none;
@@ -158,85 +138,17 @@ header {
         font-weight: 900;
         opacity: 0.1;
     }
+
     article {
         position: absolute;
         left: -5%;
         bottom: 20%;
     }
+
     h3 {
         position: absolute;
         right: 0;
         font-size: 13px;
-    }
-}
-
-.about {
-    width: 100%;
-    height: 100vh;
-
-    .about-left {
-        width: 50%;
-        float: left;
-        article {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        h4 {
-            font-size: 70px;
-            font-weight: 900;
-        }
-        p {
-            font-size: 45px;
-            font-weight: 300;
-        }
-    }
-    .about-right {
-        width: 50%;
-        float: right;
-        article {
-            max-width: 450px;
-            h5 {
-                font-size: 30px;
-                font-weight: 900;
-            }
-            p {
-                padding: 20px 0;
-            }
-            .about-skils {
-                display: table-cell;
-                padding: 10px 0px;
-                line-height: 40px;
-            }
-        }
-    }
-}
-
-.works {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    z-index: -1;
-    flex-direction: column;
-    .works-content {
-        line-height: 50px;
-        h4 {
-            text-transform: uppercase;
-        }
-        p {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
     }
 }
 
@@ -251,20 +163,24 @@ header {
     align-items: center;
     display: flex;
     z-index: -1;
+
     .error-title {
         font-size: 50px;
         text-align: center;
         font-weight: 900;
     }
+
     article {
         font-size: 20px;
         text-align: center;
         line-height: 50px;
     }
+
     .error-back-button {
         font-weight: bold;
         padding: 20px;
     }
+
     video {
         position: fixed;
         right: 0;
@@ -279,78 +195,17 @@ header {
     }
 }
 
-.nav-a {
-    color: white;
-    text-decoration: none;
-    position: relative;
-    // padding: 0 20px;
-    &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        background-color: #fff;
-        width: 0;
-        left: auto;
-        right: 0;
-        bottom: 50%;
-        height: 1px;
-        transition: all 0.35s cubic-bezier(0.694, 0.048, 0.335, 1);
-    }
-    &:hover:before {
-        width: 100%;
-        left: 0;
-        text-decoration: none;
-    }
-}
-
 footer {
     width: 100%;
     z-index: 1;
     position: fixed;
-    left: 0;
+    right: 0;
     bottom: 0;
     display: flex;
-    padding: 30px;
-    justify-content: space-between;
-    a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 10px;
-        letter-spacing: 3px;
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-        i {
-            font-size: 18px;
-        }
-    }
-}
+    padding: 3% 4%;
+    justify-content: flex-end;
 
-.slide-nav {
-    font-size: 10px;
-    position: absolute;
-    transition: 0.5s all ease;
-    animation: fade_nav 5s;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    color: #fff;
-    @keyframes fade_nav {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    img {
-        width: 10px;
-        padding: 0 10px;
-        position: relative;
-        bottom: -4px;
+    a {
+        margin-left: 20px;
     }
 }

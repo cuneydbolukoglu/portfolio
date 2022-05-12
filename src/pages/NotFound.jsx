@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 import video from '../assets/video/Bubbles-1085.mp4';
-// import video from '../assets/video/Air-Bubbles.mp4';
 
 const errorpage = props => {
     return (

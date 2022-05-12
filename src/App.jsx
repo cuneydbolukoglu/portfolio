@@ -1,22 +1,20 @@
 import React from 'react';
-import { Switch, Route, HashRouter } from "react-router-dom";
-
-import MenuData from './data/MenuData';
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Header from './components/header';
 import Footer from './components/footer';
 import ErrorPage from './pages/NotFound';
+import Home from './pages/Home';
 
 function App() {
   return (
     <HashRouter>
-        <Header />
-        <Switch>
-          {
-            MenuData.map((item, index) => <Route key={index} exact path={item.url} component={item.page} />)
-          }
-          <Route component={ErrorPage} />
-        </Switch>
-        <Footer />
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} />
+        <Route component={ErrorPage} />
+      </Switch>
+      <Footer />
     </HashRouter>
   )
 }

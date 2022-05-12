@@ -2,14 +2,6 @@ import { Link } from 'react-router-dom';
 
 const Header = props => {
 
-    const addClass = () => {
-        const hmbrgrButton = document.querySelector(".hmbrgr-button");
-        const mobileMenu = document.querySelector(".nav-mobile");
-
-        hmbrgrButton.classList.toggle('change')
-        mobileMenu.classList.toggle('active');
-    }
-
     return (
         <header>
             <div className="logo">
@@ -18,19 +10,9 @@ const Header = props => {
                 </Link>
             </div>
             <nav>
-                <Link to="/works">WORKS</Link>
-                <Link to="/about">ABOUT ME</Link>
+                <a href="http://github.com/cuneydbolukoglu" target="blank">PROJECT</a>
+                <a href="http://linkedin.com/in/cuneydbolukoglu" target="blank">ABOUT ME</a>
             </nav>
-            <div onClick={addClass} className="hmbrgr-button">
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
-            </div>
-            <div className="nav-mobile">
-                <Link to="/works" onClick={addClass}>WORKS</Link>
-                <Link to="/about" onClick={addClass}>ABOUT ME</Link>
-                <a href="mailto:cuneydbolukogluu@gmail.com?subject=Contact from website" onClick={addClass}>CONTACT ME</a>
-            </div>
         </header>
     )
 }
