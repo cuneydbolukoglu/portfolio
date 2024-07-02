@@ -1,7 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 const webpack = require('webpack');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const appDirectory = fs.realpathSync(process.cwd());
@@ -19,6 +18,9 @@ module.exports = {
         filename: '[name].[contenthash].js',
         publicPath: '/',
     },
+    resolve: {
+        extensions: ['.js', '.jsx'], // .jsx dosyalarının çözülmesi için
+    },
     module: {
         rules: [
             {
@@ -33,8 +35,8 @@ module.exports = {
                 use: [
                     'style-loader',
                     'css-loader',
+                    'postcss-loader',
                     'sass-loader',
-                    'postcss-loader'
                 ],
             },
             {
