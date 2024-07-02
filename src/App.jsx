@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Header from './components/header';
 import Footer from './components/footer';
 import ErrorPage from './pages/NotFound';
@@ -7,7 +7,7 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <HashRouter>
+    <>
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -15,7 +15,7 @@ function App() {
         <Route component={ErrorPage} />
       </Switch>
       <Footer />
-    </HashRouter>
+    </>
   )
 }
 
