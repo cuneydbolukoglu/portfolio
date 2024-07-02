@@ -52,18 +52,18 @@ module.exports = {
                     }
                 ]
             },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            outputPath: 'assets/fonts', // dosya yolu için düzeltilmiş
-                            name: '[name].[hash:8].[ext]',
-                        }
-                    }
-                ]
-            },
+            // {
+            //     test: /\.(woff|woff2|eot|ttf|otf)$/i,
+            //     use: [
+            //         {
+            //             loader: 'file-loader',
+            //             options: {
+            //                 outputPath: 'assets/fonts', // dosya yolu için düzeltilmiş
+            //                 name: '[name].[hash:8].[ext]',
+            //             }
+            //         }
+            //     ]
+            // },
             {
                 test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)$/,
                 use: [

@@ -47,15 +47,15 @@ module.exports = {
                     name: 'assets/images/[name].[ext]',
                 },
             },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/i,
-                loader: 'url-loader',
-                options: {
-                    limit: 50000,
-                    mimeType: 'application/font-ttf',
-                    name: 'assets/fonts/[name].[ext]',
-                },
-            },
+            // {
+            //     test: /\.(woff|woff2|eot|ttf|otf)$/i,
+            //     loader: 'url-loader',
+            //     options: {
+            //         limit: 50000,
+            //         mimeType: 'application/font-ttf',
+            //         name: 'assets/fonts/[name].[ext]',
+            //     },
+            // },
             {
                 test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)$/,
                 use: [
