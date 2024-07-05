@@ -58,8 +58,7 @@ module.exports = {
             //         {
             //             loader: 'file-loader',
             //             options: {
-            //                 outputPath: 'assets/fonts', // dosya yolu için düzeltilmiş
-            //                 name: '[name].[hash:8].[ext]',
+            //                 name: 'assets/fonts/[name].[hash:8].[ext]',
             //             }
             //         }
             //     ]
